@@ -6,7 +6,7 @@ if _G.AutofarmSettings then
 	SettingsAutofarm = _G.AutofarmSettings
 else
 	_G.AutofarmSettings = {}
-	SettingsAutofarm = {AntiAfk = false, DelayFarm = 2}
+	SettingsAutofarm = {AntiAfk = false, DelayFarm = 2.15}
 end
 if _G.AutoFarmMM2IsLoaded then return end
 _G.AutoFarmMM2IsLoaded = true
@@ -91,7 +91,7 @@ function ChangeBeachballType(cointype)
 		CurrentCoinType = CoinTypes[PositionOfCoinType]
 	end
 end
-AutofarmDelay = 2
+AutofarmDelay = 2.15
 ResetWhenFullBag = true
 AutofarmIN = false
 bringpose = CFrame.new(math.random(-5, 5), -100, math.random(-5, 5)) --nvm
